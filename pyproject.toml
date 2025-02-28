@@ -1,9 +1,10 @@
 [tool.poetry]
-name = "your-package-name"
+name = "fairseq"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <youremail@example.com>"]
+authors = ["migo migoxv@gmail.com"]
 license = "MIT"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.7"  # specify the version range for Python
