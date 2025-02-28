@@ -6,10 +6,15 @@ authors = ["migo migoxv@gmail.com"]
 license = "MIT"
 readme = "README.md"
 
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
 [tool.poetry.dependencies]
-python = ">=3.7"  # specify the version range for Python
-numpy = ">=1.21.3"
-torch = ">=1.10"
+python = ">=3.9"  
+numpy = "*"
+torch = "*"
 cython = "*"
 hydra = "*"
 scipy = "*"
@@ -22,7 +27,7 @@ wheel = "*"
 black = "*"
 isort = "*"
 
-[tool.poetry.scripts]
+# [tool.poetry.scripts]
 # Add any CLI tools here if required
 
 [tool.black]
