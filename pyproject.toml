@@ -1,18 +1,36 @@
-[build-system]
-requires = [
-  "setuptools>=18.0",
-  "wheel",
-  "cython",
-  "numpy>=1.21.3",
-  "torch>=1.10",
-]
-build-backend = "setuptools.build_meta"
+[tool.poetry]
+name = "your-package-name"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <youremail@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.x"  # specify the version range for Python
+numpy = ">=1.21.3"
+torch = ">=1.10"
+cython = "*"
+boto3 = "*"
+botocore = "*"
+hydra = "*"
+scipy = "*"
+# matplotlib = "*"
+# add other dependencies here
+
+[tool.poetry.dev-dependencies]
+setuptools = ">=18.0"
+wheel = "*"
+black = "*"
+isort = "*"
+
+[tool.poetry.scripts]
+# Add any CLI tools here if required
 
 [tool.black]
 extend-exclude = '''
 (
-^/examples/|
-^/fairseq/model_parallel/megatron|
+^/examples/| 
+^/fairseq/model_parallel/megatron| 
 ^/build/
 )
 '''
