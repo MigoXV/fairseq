@@ -16,7 +16,7 @@ python = ">=3.9"
 numpy = "*"
 torch = "*"
 cython = "*"
-hydra = "*"
+hydra-core = "*"
 scipy = "*"
 # matplotlib = "*"
 # add other dependencies here
